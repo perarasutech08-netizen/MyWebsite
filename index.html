@@ -1,0 +1,348 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>My Portfolio | Perarasu</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #0f172a;
+            color: #f8fafc;
+            line-height: 1.6;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 8%;
+            background: #111c33;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        .logo {
+            color: #38bdf8;
+            font-size: 25px;
+            font-weight: bold;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 20px;
+            transition: 0.3s;
+        }
+
+        nav a:hover {
+            color: #38bdf8;
+        }
+
+        section {
+            padding: 80px 8%;
+        }
+
+        .hero {
+            min-height: 85vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+        }
+
+        .hero h1 {
+            font-size: clamp(36px, 6vw, 60px);
+            margin: 15px 0;
+        }
+
+        .hero h1 span {
+            color: #38bdf8;
+        }
+
+        .hero p {
+            max-width: 650px;
+            color: #cbd5e1;
+            font-size: 18px;
+        }
+
+        .button {
+            display: inline-block;
+            margin-top: 25px;
+            padding: 12px 25px;
+            background: #38bdf8;
+            color: #0f172a;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: bold;
+        }
+
+        .button:hover {
+            background: #7dd3fc;
+        }
+
+        h2 {
+            font-size: 32px;
+            margin-bottom: 25px;
+            color: #38bdf8;
+        }
+
+        .about p {
+            max-width: 850px;
+            color: #cbd5e1;
+        }
+
+        .skills-container,
+        .projects-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 20px;
+        }
+
+        .card {
+            background: #1e293b;
+            padding: 25px;
+            border-radius: 12px;
+            border: 1px solid #334155;
+            transition: transform 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            border-color: #38bdf8;
+        }
+
+        .card h3 {
+            margin-bottom: 10px;
+            color: #f8fafc;
+        }
+
+        .card p {
+            color: #cbd5e1;
+        }
+
+        .contact p {
+            margin: 10px 0;
+            color: #cbd5e1;
+        }
+
+        .contact a {
+            color: #38bdf8;
+            text-decoration: none;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #111c33;
+            color: #cbd5e1;
+        }
+
+        @media (max-width: 650px) {
+            header {
+                flex-direction: column;
+                gap: 15px;
+            }
+
+            nav {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                gap: 12px;
+            }
+
+            nav a {
+                margin: 0;
+                font-size: 14px;
+            }
+
+            section {
+                padding: 60px 6%;
+            }
+
+            .hero {
+                min-height: 70vh;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <header>
+        <div class="logo">Perarasu.</div>
+
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#education">Education</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <!-- Home Section -->
+    <section class="hero" id="home">
+        <p>Hello, welcome to my portfolio!</p>
+
+        <h1>I'm <span>Perarasu</span></h1>
+
+        <h2>Frontend Developer & Tech Enthusiast</h2>
+
+        <p>
+            I am passionate about web development and technology.
+            I enjoy creating responsive websites, learning new skills,
+            and building useful projects.
+        </p>
+
+        <a href="#projects" class="button">Explore My Projects</a>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <h2>About Me</h2>
+
+        <p>
+            I am an aspiring developer interested in frontend development,
+            programming, and modern web technologies. I enjoy turning ideas
+            into interactive and user-friendly websites. My goal is to
+            improve my technical skills and build projects that solve
+            real-world problems.
+        </p>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills">
+        <h2>My Skills</h2>
+
+        <div class="skills-container">
+            <div class="card">
+                <h3>HTML & CSS</h3>
+                <p>Creating structured, attractive, responsive web pages.</p>
+            </div>
+
+            <div class="card">
+                <h3>JavaScript</h3>
+                <p>Adding interactivity and dynamic behavior to websites.</p>
+            </div>
+
+            <div class="card">
+                <h3>React</h3>
+                <p>Building reusable components and modern user interfaces.</p>
+            </div>
+
+            <div class="card">
+                <h3>Java & Python</h3>
+                <p>Learning programming concepts and problem-solving.</p>
+            </div>
+
+            <div class="card">
+                <h3>Database</h3>
+                <p>Understanding database concepts and data management.</p>
+            </div>
+
+            <div class="card">
+                <h3>Git & GitHub</h3>
+                <p>Managing source code and tracking project changes.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+        <h2>My Projects</h2>
+
+        <div class="projects-container">
+            <div class="card">
+                <h3>Personal Portfolio</h3>
+                <p>
+                    A responsive website that showcases my skills,
+                    projects, education, and contact information.
+                </p>
+                <a href="#contact" class="button">Contact Me</a>
+            </div>
+
+            <div class="card">
+                <h3>Service Management System</h3>
+                <p>
+                    A web application concept for managing customers,
+                    service tickets, products, and engineers.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>Machine Learning Projects</h3>
+                <p>
+                    Learning and implementing algorithms such as PCA,
+                    BFS, and other introductory AI/ML techniques.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education">
+        <h2>Education</h2>
+
+        <div class="card">
+            <h3>Your Degree / Course</h3>
+            <p>College Name: Your College Name</p>
+            <p>Year: Your Graduation Year</p>
+            <p>
+                Focus areas: Programming, web development,
+                databases, and computer science.
+            </p>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <h2>Contact Me</h2>
+
+        <p>Email:
+            <a href="mailto:yourmail@example.com">
+                yourmail@example.com
+            </a>
+        </p>
+
+        <p>GitHub:
+            <a href="https://github.com/yourusername"
+               target="_blank" rel="noopener noreferrer">
+                Visit My GitHub
+            </a>
+        </p>
+
+        <p>LinkedIn:
+            <a href="https://www.linkedin.com/in/yourusername"
+               target="_blank" rel="noopener noreferrer">
+                Visit My LinkedIn
+            </a>
+        </p>
+
+        <a href="mailto:yourmail@example.com" class="button">
+            Send Me an Email
+        </a>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>
+            &copy; 2026 Perarasu. All rights reserved.
+        </p>
+    </footer>
+
+</body>
+</html>
